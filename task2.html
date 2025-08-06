@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Task 2 </h1>
+<script>
+     // instanceof    Checks if an object is an instance of a class/function
+        function Animal(name) {
+            this.name = name;
+        }
+        let dog = new Animal("Dog");
+        console.log("dog instanceof Animal:", dog instanceof Animal);      // true
+        console.log("items instanceof Array:", items instanceof Array);      // true
+        console.log("person instanceof Object:", person instanceof Object);      // true
+// typeof   Returns the data type of a variable (string, number, object)
+        let name = "Vera";
+        let age = 21;
+        let isStudent = true;
+        let items = ["pen", "book"];
+        let person = { firstName: "Vera", lastName: "Jere" };
+
+        console.log("typeof name:", typeof name);        // string
+        console.log("typeof age:", typeof age);          // number
+        console.log("typeof isStudent:", typeof isStudent); // boolean
+        console.log("typeof items:", typeof items);      // object (array is a type of object)
+        console.log("typeof person:", typeof person);    // object
+// delete   Removes a property from an object
+        let student = {
+        name: "Vera",
+        age: 21,
+        grade: "A"
+        };
+        console.log("Before delete:", student);
+        delete student.grade;    // delete the grade property
+        console.log("After delete:", student);
+</script>
+
+</body>
+</html>
